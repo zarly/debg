@@ -1,6 +1,6 @@
 {
   "name": "debg",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Small tool for debugging",
   "main": "index.js",
   "keywords": [
@@ -11,15 +11,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
-    "name": "Alex Abramov"
+    "name": "Alex Abramov",
+    "email": "abramov231@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/zarly/debg"
   },
   "license": "BSD",
-  "readme": "# debg\n\nSmall tool for debugging\n\n## Instalation\n\n```\nnpm install debg\n```\n\n## Usage\n\n```js\n\nvar debg = require('debg');\n\ndebg.live_require('module_name'); // require module without caching\n\ndebg.stack(); // Get stack trace\n\ndebg.log('some argument', {'some': 'argument'}); // Write log in file debg.log\n\ndebg.make_debugable(); // run node_inspector and google-chrome\n\n```\n",
-  "readmeFilename": "Readme.md",
-  "_id": "debg@0.1.5",
-  "dist": {
-    "shasum": "11077963f0ceadb18983cf770e10bb55a7a502bb"
-  },
-  "_from": "debg@",
-  "_resolved": "https://registry.npmjs.org/debg/-/debg-0.1.5.tgz"
+  "readmeFilename": "Readme.md"
 }
